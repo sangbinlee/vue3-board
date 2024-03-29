@@ -76,9 +76,13 @@ npm run build
 
 # npm i axios
 
-#### api
+#### Ex. domain api
 
-    [GET] select    : /api/vi/domain
-    [GET] detail    : /api/vi/domain/{id}
-    [PUT] update    : /api/vi/domain/{id}
-    [DELETE] delete : /api/vi/domain/{id}
+    method  : post,     get,    put,    delete
+    db      : insert,   select, update, delete
+    url
+    [POST]      insert  : /api/vi/domain
+    [GET]       select  : /api/vi/domain
+    [GET]       detail  : /api/vi/domain/{id}
+    [PUT]       update  : /api/vi/domain/{id}
+    [DELETE]    delete  : /api/vi/domain/{id}
