@@ -1,4 +1,5 @@
 <template>
+  <h1>board</h1>
   <form @submit.prevent="submit">
     <v-text-field
       v-model="name.value.value"

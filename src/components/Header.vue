@@ -1,30 +1,34 @@
 <script setup lang="ts">
-defineProps<{
-  msg: string;
-}>();
+// defineProps<{
+//   msg: string;
+// }>();
 </script>
 
 <template>
-  <header>
-    <!-- <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/logo.svg"
-      width="125"
-      height="125"
-    /> -->
+  <header
+    class="v-toolbar v-toolbar--flat v-toolbar--density-default bg-grey-lighten-4 v-theme--light v-locale--is-ltr v-app-bar"
+    style="
+      z-index: 1008;
+      transform: translateY(0%);
+      left: 0px;
+      width: calc(100% + 0px);
+    "
+  >
+    <div class="v-toolbar__content" style="height: 72px">
+      <div class="wrapper">
+        <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/about">About</RouterLink>
+          <RouterLink to="/list">list</RouterLink>
+          <RouterLink to="/write">write</RouterLink>
+          <RouterLink to="/write2">write2</RouterLink>
+        </nav>
+      </div>
 
-    <div class="wrapper">
-      <!-- <HelloWorld msg="You did it!" /> -->
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/list">list</RouterLink>
-        <RouterLink to="/write">write</RouterLink>
-        <RouterLink to="/write2">write2</RouterLink>
-      </nav>
+      <div class="v-spacer"></div>
+      <!---->
     </div>
+    <!---->
   </header>
 </template>
 
@@ -43,7 +47,8 @@ nav {
   width: 100%;
   font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+  margin: 2rem;
 }
 
 nav a.router-link-exact-active {

@@ -1,14 +1,34 @@
 <script setup lang="ts">
-defineProps<{
-  msg: string;
-}>();
+// defineProps<{
+//   msg: string;
+// }>();
 </script>
 
 <template>
-  <div class="footer">all right reserved</div>
+  <footer
+    class="v-footer v-theme--light bg-grey text-right"
+    style="
+      bottom: 0px;
+      z-index: 1006;
+      transform: translateY(0%);
+      position: fixed;
+      height: 44px;
+      left: 0px;
+      width: calc(100% + 0px);
+    "
+  >
+    all right reserved
+  </footer>
 </template>
 
 <style scoped>
+.footer {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
 h1 {
   font-weight: 500;
   font-size: 2.6rem;

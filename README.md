@@ -71,4 +71,14 @@ npm run build
     npm i @mdi/font
 
 ######## npm i vee-validate --save
+
 # vue3-board
+
+# npm i axios
+
+#### api
+
+    [GET] select    : /api/vi/domain
+    [GET] detail    : /api/vi/domain/{id}
+    [PUT] update    : /api/vi/domain/{id}
+    [DELETE] delete : /api/vi/domain/{id}

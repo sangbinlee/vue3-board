@@ -8,6 +8,8 @@ import App from "./App.vue";
 
 // router
 import router from "./router";
+// axios
+import axios from "./plugins/axios";
 
 // Vuetify
 import "vuetify/styles";
@@ -25,5 +27,8 @@ const app = createApp(App);
 app.use(createPinia());
 app.use(router);
 app.use(vuetify);
+app.use(axios, {
+  baseUrl: "https://cataas.com/",
+});
 
 app.mount("#app");

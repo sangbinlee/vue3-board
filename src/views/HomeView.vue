@@ -4,6 +4,7 @@
 
 <template>
   <main>
-    <TheWelcome />
+    <!-- <TheWelcome /> -->
+    home
   </main>
 </template>
