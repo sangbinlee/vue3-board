@@ -86,3 +86,14 @@ npm run build
     [GET]       detail  : /api/vi/domain/{id}
     [PUT]       update  : /api/vi/domain/{id}
     [DELETE]    delete  : /api/vi/domain/{id}
+
+#### Ex. domain(board) api
+
+    method  : post,     get,    put,    delete
+    db      : insert,   select, update, delete
+    url
+    [POST]      insert  : /api/vi/board
+    [GET]       select  : /api/vi/board
+    [GET]       detail  : /api/vi/board/{id}
+    [PUT]       update  : /api/vi/board/{id}
+    [DELETE]    delete  : /api/vi/board/{id}
