@@ -3,6 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import BoardWrite from "@/views/BoardWrite.vue";
 import BoardList from "@/views/BoardList.vue";
 import BoardWrite2 from "@/views/BoardWrite2.vue";
+import BoardList2 from "@/views/BoardList2.vue"
 
 const routes = [
   {
@@ -22,6 +23,11 @@ const routes = [
     path: "/list",
     name: "list",
     component: BoardList,
+  },
+  {
+    path: "/list2",
+    name: "list2",
+    component: BoardList2,
   },
   {
     path: "/write",

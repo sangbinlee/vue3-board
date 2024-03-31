@@ -20,6 +20,7 @@
           <RouterLink to="/">Home</RouterLink>
           <RouterLink to="/about">About</RouterLink>
           <RouterLink to="/list">list</RouterLink>
+          <RouterLink to="/list2">list2</RouterLink>
           <RouterLink to="/write">write</RouterLink>
           <RouterLink to="/write2">write2</RouterLink>
         </nav>

@@ -5,7 +5,8 @@ const AUTH_TOKEN = "test";
 // Global axios defaults
 // Now all requests using this instance will wait 2.5 seconds before timing out
 axios.defaults.timeout = 2500;
-axios.defaults.baseURL = "https://api.example.com";
+// axios.defaults.baseURL = "https://api.example.com";// https://jsonplaceholder.typicode.com
+axios.defaults.baseURL = "https://jsonplaceholder.typicode.com";// https://jsonplaceholder.typicode.com
 axios.defaults.headers.common["Authorization"] = AUTH_TOKEN;
 axios.defaults.headers.post["Content-Type"] =
   "application/x-www-form-urlencoded";

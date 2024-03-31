@@ -7,7 +7,9 @@ import PageHeader from "./components/Header.vue";
 
 <template>
   <PageHeader />
-  <RouterView />
+  <div style="padding-bottom: 100px;">
+    <RouterView />
+  </div>
   <PageFooter />
 </template>
 

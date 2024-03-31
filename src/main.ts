@@ -6,6 +6,10 @@ import { createPinia } from "pinia";
 
 import App from "./App.vue";
 
+// bootstrap
+import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 // router
 import router from "./router";
 
@@ -35,3 +39,17 @@ app.use(axios, {
 });
 
 app.mount("#app");
+
+
+
+
+
+
+
+
+// filters
+app.config.globalProperties.$filters = {
+  currencydecimal(value: number) {
+    return value.toFixed(2);
+  }
+};

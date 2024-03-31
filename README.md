@@ -97,3 +97,10 @@ npm run build
     [GET]       detail  : /api/vi/board/{id}
     [PUT]       update  : /api/vi/board/{id}
     [DELETE]    delete  : /api/vi/board/{id}
+
+
+
+#### npm install axios-http-wrapper
+
+
+#### npm install bootstrap jquery popper.js

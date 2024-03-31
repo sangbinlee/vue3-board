@@ -2,6 +2,8 @@
 // defineProps<{
 //   msg: string;
 // }>();
+import { useMouse } from "@/utils/mouse.js";
+const { x, y } = useMouse();
 </script>
 
 <template>
@@ -18,6 +20,8 @@
     "
   >
     all right reserved
+
+    마우스 좌표: {{ x }}, {{ y }}
   </footer>
 </template>
 
