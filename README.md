@@ -109,3 +109,40 @@ npm run build
 
 ### docker desktop
     https://www.docker.com/get-started/
+
+
+
+### docker -v
+    C:\Users\sangb>docker -v
+        Docker version 25.0.3, build 4debf41
+
+
+    C:\Users\sangb>docker run --name PostgreSQL -e POSTGRES_USER=user1234 -e POSTGRES_PASSWORD=user1234 -d -p 5432:5432 postgres
+    Unable to find image 'postgres:latest' locally
+    latest: Pulling from library/postgres
+    8a1e25ce7c4f: Downloading [===================================>               ]  20.53MB/29.12MB
+    002317ed8722: Download complete
+    c223965bd9a8: Download complete
+    847682431a68: Download complete
+    8d29ba654727: Download complete
+    fd133663e42b: Download complete
+    13de11c6ecda: Download complete
+    45bb35744214: Download complete
+    d4082e63ce2c: Downloading [====>                                              ]  10.19MB/109MB
+    269f33c511c1: Download complete
+    7cbaf3c85093: Download complete
+    f1c82efa0dcd: Waiting
+    e9d0d3c40657: Waiting
+    68bf5c580643: Waiting
+
+
+
+    C:\Users\sangb>docker ps  -a
+    CONTAINER ID   IMAGE      COMMAND                   CREATED         STATUS         PORTS                    NAMES
+    d11f41063f71   postgres   "docker-entrypoint.s…"   7 minutes ago   Up 7 minutes   0.0.0.0:5432->5432/tcp   PostgreSQL
+
+
+
+
+#### create database smartscore;
+#### org.bgee.log4jdbc-log4j2
