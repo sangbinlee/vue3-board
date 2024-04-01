@@ -104,3 +104,8 @@ npm run build
 
 
 #### npm install bootstrap jquery popper.js
+
+
+
+### docker desktop
+    https://www.docker.com/get-started/

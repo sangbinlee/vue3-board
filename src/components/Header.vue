@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <header
+  <!-- <header
     class="v-toolbar v-toolbar--flat v-toolbar--density-default bg-grey-lighten-4 v-theme--light v-locale--is-ltr v-app-bar"
     style="
       z-index: 1008;
@@ -17,83 +17,50 @@
     <div class="v-toolbar__content" style="height: 72px">
       <div class="wrapper">
         <nav>
-          <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/about">About</RouterLink>
-          <RouterLink to="/list">list</RouterLink>
-          <RouterLink to="/list2">list2</RouterLink>
-          <RouterLink to="/write">write</RouterLink>
-          <RouterLink to="/write2">write2</RouterLink>
+          <RouterLink class="nav-link" to="/">Home</RouterLink>
+          <RouterLink class="nav-link" to="/about">About</RouterLink>
+          <RouterLink class="nav-link" to="/list">list</RouterLink>
+          <RouterLink class="nav-link" to="/list2">list2</RouterLink>
+          <RouterLink class="nav-link" to="/write">write</RouterLink>
+          <RouterLink class="nav-link" to="/write2">write2</RouterLink>
+          <RouterLink class="nav-link" to="/tutorials">tutorials</RouterLink>
         </nav>
       </div>
-
       <div class="v-spacer"></div>
-      <!---->
     </div>
-    <!---->
-  </header>
+  </header> -->
+
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <router-link to="/" class="navbar-brand">bezKoder</router-link>
+    <div class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <RouterLink class="nav-link" to="/">Home</RouterLink>
+      </li>
+      <li class="nav-item">
+        <RouterLink class="nav-link" to="/about">About</RouterLink>
+      </li>
+      <li class="nav-item">
+        <RouterLink class="nav-link" to="/list">list</RouterLink>
+      </li>
+      <li class="nav-item">
+        <RouterLink class="nav-link" to="/list2">list2</RouterLink>
+      </li>
+      <li class="nav-item">
+        <RouterLink class="nav-link" to="/write">write</RouterLink>
+      </li>
+      <li class="nav-item">
+        <RouterLink class="nav-link" to="/write2">write2</RouterLink>
+      </li>
+      <li class="nav-item">
+        <RouterLink class="nav-link" to="/tutorials">tutorials</RouterLink>
+      </li>
+      <li class="nav-item">
+        <router-link to="/tutorials/add" class="nav-link">Add</router-link>
+      </li>
+    </div>
+  </nav>
+
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-  /* max-height: 100vh; */
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  /* margin-top: 2rem; */
-  margin: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-/* @media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-} */
+<style scoped> 
 </style>
