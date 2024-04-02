@@ -4,6 +4,13 @@
 // }>();
 import { useMouse } from "@/utils/mouse.js";
 const { x, y } = useMouse();
+
+
+
+
+
+import { version as piniaVersion } from 'pinia/package.json'
+import { version as vueVersion } from 'vue/package.json'
 </script>
 
 <template>
@@ -19,9 +26,19 @@ const { x, y } = useMouse();
       width: calc(100% + 0px);
     "
   >
-    all right reserved
-
-    마우스 좌표: {{ x }}, {{ y }}
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+        마우스 좌표: {{ x }}, {{ y }}
+        </div>
+        <div class="col">
+    Using Vue v{{ vueVersion }} and Pinia v{{ piniaVersion }}.
+        </div>
+        <div class="col">
+          Column
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 

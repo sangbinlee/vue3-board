@@ -57,6 +57,9 @@
       <li class="nav-item">
         <router-link to="/tutorials/add" class="nav-link">Add</router-link>
       </li>
+      <li class="nav-item">
+        <router-link to="/pinia" class="nav-link">pinia</router-link>
+      </li>
     </div>
   </nav>
 

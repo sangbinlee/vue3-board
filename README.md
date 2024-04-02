@@ -146,3 +146,35 @@ npm run build
 
 #### create database smartscore;
 #### org.bgee.log4jdbc-log4j2
+
+
+#### yarn add -D sass
+#### Could not resolve "@popperjs/core"
+#### npm install @popperjs/core@latest
+
+
+# docker run -d -p 1521:1521 oracleinanutshell/oracle-xe-11g
+
+
+    C:\Users\sangb>docker run -d -p 1521:1521 oracleinanutshell/oracle-xe-11g
+    Unable to find image 'oracleinanutshell/oracle-xe-11g:latest' locally
+    latest: Pulling from oracleinanutshell/oracle-xe-11g
+    6cf436f81810: Pull complete
+    987088a85b96: Pull complete
+    b4624b3efe06: Pull complete
+    d42beb8ded59: Pull complete
+    15522cc0fb47: Pull complete
+    f747bf1d551d: Pull complete
+    Digest: sha256:8b740e77d4b90add693fedb22938f340821e89665fb58ecaeeb0dace853b9ee5
+    Status: Downloaded newer image for oracleinanutshell/oracle-xe-11g:latest
+    96a7770f91e35b71ca6b98bf418db342179e8d28eeed6a428e14cf90e49be6c7
+
+#####    접속 정보
+        system/oracle
+
+        CREATE USER user1234 IDENTIFIED BY user1234;
+
+        CREATE USER user1234 IDENTIFIED BY user1234;
+        CREATE USER user1234 IDENTIFIED BY user1234 DEFAULT TABLESPACE USERS TEMPORARY TABLESPACE TEMP;
+        GRANT CONNECT, RESOURCE TO user1234;        
+        grant connect,resource,dba to user1234;

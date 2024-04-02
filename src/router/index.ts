@@ -4,6 +4,7 @@ import BoardWrite from "@/views/BoardWrite.vue";
 import BoardList from "@/views/BoardList.vue";
 import BoardWrite2 from "@/views/BoardWrite2.vue";
 import BoardList2 from "@/views/BoardList2.vue"
+import Pinia from "@/views/Pinia.vue";
 
 const routes = [
   {
@@ -55,6 +56,12 @@ const routes = [
     name: "add",
     component: () => import("@/components/AddTutorial.vue"),
   },
+  {
+    path: "/pinia",
+    name: "pinia",
+    component: Pinia,
+  },
+  
 ];
 
 const router = createRouter({
