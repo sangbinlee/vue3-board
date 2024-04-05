@@ -63,6 +63,9 @@
       <li class="nav-item">
         <router-link to="/air" class="nav-link">air</router-link>
       </li>
+      <li class="nav-item">
+        <router-link to="/tree" class="nav-link">tree</router-link>
+      </li>
     </div>
   </nav>
 

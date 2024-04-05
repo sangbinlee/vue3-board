@@ -6,6 +6,7 @@ import BoardWrite2 from "@/views/BoardWrite2.vue";
 import BoardList2 from "@/views/BoardList2.vue"
 import Pinia from "@/views/Pinia.vue";
 import Air from "@/views/Air.vue";
+import Tree from "@/views/Tree.vue";
 
 const routes = [
   {
@@ -66,6 +67,11 @@ const routes = [
     path: "/air",
     name: "air",
     component: Air,
+  },
+  {
+    path: "/tree",
+    name: "tree",
+    component: Tree,
   },
   
 ];
