@@ -178,3 +178,14 @@ npm run build
         CREATE USER user1234 IDENTIFIED BY user1234 DEFAULT TABLESPACE USERS TEMPORARY TABLESPACE TEMP;
         GRANT CONNECT, RESOURCE TO user1234;        
         grant connect,resource,dba to user1234;
+
+
+
+
+##### npm i sweetalert2
+
+
+#### api call proxy 설정
+    vite.config.ts
+
+      '/v1/dir': 'http://localhost:8080',

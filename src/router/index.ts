@@ -7,6 +7,10 @@ import BoardList2 from "@/views/BoardList2.vue"
 import Pinia from "@/views/Pinia.vue";
 import Air from "@/views/Air.vue";
 import Tree from "@/views/Tree.vue";
+import ProjectList from "@/views/ProjectList.vue";
+import ProjectEdit from "@/views/ProjectEdit.vue";
+import ProjectCreate from "@/views/ProjectCreate.vue";
+import ProjectShow from "@/views/ProjectShow.vue";
 
 const routes = [
   {
@@ -72,6 +76,26 @@ const routes = [
     path: "/tree",
     name: "tree",
     component: Tree,
+  },
+  {
+    path: "/list",
+    name: "list",
+    component: ProjectList,
+  },
+  {
+    path: "/create",
+    name: "create",
+    component: ProjectCreate,
+  },
+  {
+    path: "/edit",
+    name: "edit",
+    component: ProjectEdit,
+  },
+  {
+    path: "/show",
+    name: "show",
+    component: ProjectShow,
   },
   
 ];

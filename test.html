@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>index for test</title>
+    </head>
+    <body>
+        <div id="app">
+            {{ greeting }}
+        </div>
+        <div id="app2">
+            {{ greeting2 }}
+        </div>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <!-- <script src="https://unpkg.com/vue@next" defer></script> -->
+        <script>
+            // const { createApp, ref } = Vue
+            let app = Vue.createApp({
+                data: function() {
+                    return {
+                        greeting: 'Hello vue3!'
+                    }
+                }
+            })
+            app.mount('#app')
+        </script>
+        <script>
+        const { createApp, ref } = Vue
+
+        createApp({
+            setup() {
+                const greeting2 = ref('Hello vue3333333333!')
+                return {
+                    greeting2
+                }
+            }
+        }).mount('#app2')
+        </script>
+    </body>
+</html>

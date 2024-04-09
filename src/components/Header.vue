@@ -66,6 +66,9 @@
       <li class="nav-item">
         <router-link to="/tree" class="nav-link">tree</router-link>
       </li>
+      <li class="nav-item">
+        <router-link to="/list" class="nav-link">list</router-link>
+      </li>
     </div>
   </nav>
 
