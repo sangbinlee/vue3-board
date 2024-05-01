@@ -14,9 +14,10 @@ export default defineConfig({
     }
   },
   server: {
-    // port: 9000,
+    port: 3000,
     proxy: {
-      '/api/v1': 'http://localhost:8080',
+      '/api': 'http://localhost:8080',
+      // '/api/v1': 'http://localhost:8080',
       // '/api/v1/tutorials': 'http://localhost:8080',
     }
   }

@@ -1,8 +1,4 @@
-<script setup lang="ts">
-// defineProps<{
-//   msg: string;
-// }>();
-</script>
+
 
 <template>
   <!-- <header
@@ -69,6 +65,18 @@
       <li class="nav-item">
         <router-link to="/list" class="nav-link">list</router-link>
       </li>
+
+
+      <li v-if="showAdminBoard" class="nav-item">
+        <router-link to="/admin" class="nav-link">Admin Board</router-link>
+      </li>
+      <li v-if="showModeratorBoard" class="nav-item">
+        <router-link to="/mod" class="nav-link">Moderator Board</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link v-if="currentUser" to="/user" class="nav-link">User</router-link>
+      </li>
+
     </div>
 
 
@@ -110,6 +118,49 @@
   </nav>
 
 </template>
+
+<!-- <script setup> -->
+<script >
+// defineProps<{
+//   msg: string;
+// }>();
+export default {
+  name: "Header",
+  data() {
+    return {
+      content: "",
+    };
+  },
+  mounted() { 
+  },
+  computed: {
+    currentUser() {
+      return this.$store.state.auth.user;
+    },
+    showAdminBoard() {
+      if (this.currentUser && this.currentUser['roles']) {
+        return this.currentUser['roles'].includes('ROLE_ADMIN');
+      }
+
+      return false;
+    },
+    showModeratorBoard() {
+      if (this.currentUser && this.currentUser['roles']) {
+        return this.currentUser['roles'].includes('ROLE_MODERATOR');
+      }
+
+      return false;
+    }
+  },
+  methods: {
+    logOut() {
+      console.log('logout...................')
+      this.$store.dispatch('auth/logout');
+      this.$router.push('/login');
+    }
+  }
+};
+</script>
 
 <style scoped> 
 </style>
