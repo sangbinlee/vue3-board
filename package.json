@@ -11,6 +11,9 @@
     "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/vue-fontawesome": "^3.0.6",
     "@mdi/font": "^7.4.47",
     "@popperjs/core": "^2.11.8",
     "axios": "^1.6.8",
@@ -22,7 +25,10 @@
     "sweetalert2": "^11.10.7",
     "vee-validate": "^4.12.6",
     "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vue-fontawesomeicons": "^0.0.1",
+    "vue-router": "^4.3.0",
+    "vuex": "^4.0.2",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.2",

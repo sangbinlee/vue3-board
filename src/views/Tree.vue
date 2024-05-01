@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { ref, onMounted, watchEffect } from 'vue' 
-import TreeItem from '../components/TreeItem.vue'
+console.clear()
+import TreeItem from '@/components/TreeItem.vue';
+import { onMounted, ref, watchEffect } from 'vue';
 // import TheWelcome from '../components/TheWelcome.vue'
 
 // const API_URL = `http://localhost:8080/v1/dir`

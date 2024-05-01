@@ -1,17 +1,33 @@
 import axios from "axios";
 import type { App } from "vue";
 
-const AUTH_TOKEN = "test";
+
+
+
+const user_ = localStorage.getItem('user')
+const user = user_ ? JSON.parse(user_) : {}
+const Authorization = 'Bearer ' + user?.accessToken
+console.log('test ::: user_::', user_)
+console.log('test ::: user::', user)
+console.log('test ::: Authorization::', Authorization)
+const AUTH_TOKEN = Authorization;
 // Global axios defaults
 // Now all requests using this instance will wait 2.5 seconds before timing out
 axios.defaults.timeout = 2500;
 // axios.defaults.baseURL = "https://api.example.com";// https://jsonplaceholder.typicode.com
-axios.defaults.baseURL = "https://jsonplaceholder.typicode.com";// https://jsonplaceholder.typicode.com
+// axios.defaults.baseURL = "https://jsonplaceholder.typicode.com";// https://jsonplaceholder.typicode.com
+// axios.defaults.baseURL = "http://localhost:8080/api/v1";// https://jsonplaceholder.typicode.com
+axios.defaults.baseURL = "/api/v1";// https://jsonplaceholder.typicode.com
+
+
+
+
+
 axios.defaults.headers.common["Authorization"] = AUTH_TOKEN;
 axios.defaults.headers.post["Content-Type"] =
   "application/x-www-form-urlencoded";
 
-console.log("AUTH_TOKEN");
+console.log("AUTH_TOKEN::", AUTH_TOKEN);
 
 // Add a request interceptor
 axios.interceptors.request.use(

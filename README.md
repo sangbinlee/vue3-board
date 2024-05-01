@@ -189,3 +189,46 @@ npm run build
     vite.config.ts
 
       '/v1/dir': 'http://localhost:8080',
+
+
+
+#### npm install --global yarn
+
+
+### 
+### 
+### 
+### 
+### 
+### 
+
+
+
+
+### npm install -S yup
+
+
+
+
+### [post] api/auth/signup (email, password)  - database - response : registerd info
+### [post] api/auth/signup (email, password)  - database - response : registerd info
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### 
+### npm install vuex@next --save
+### npm i @fortawesome/vue-fontawesome
+### npm i @fortawesome/fontawesome-svg-core
+### npm i @fortawesome/free-solid-svg-icons
+### npm i vue-fontawesomeicons
+ 

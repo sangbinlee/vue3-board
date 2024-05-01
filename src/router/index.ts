@@ -1,23 +1,75 @@
+import BoardAdmin from '@/components/BoardAdmin.vue';
+import BoardModerator from '@/components/BoardModerator.vue';
+import BoardUser from '@/components/BoardUser.vue';
+import Login from '@/components/Login.vue';
+import Profile from '@/components/Profile.vue';
+import Register from '@/components/Register.vue';
+
+ 
+
+import Air from "@/views/Air.vue";
+import BoardList from "@/views/BoardList.vue";
+import BoardList2 from "@/views/BoardList2.vue";
+import BoardWrite from "@/views/BoardWrite.vue";
+import BoardWrite2 from "@/views/BoardWrite2.vue";
+import Pinia from "@/views/Pinia.vue";
+import ProjectCreate from '@/views/ProjectCreate.vue';
+import ProjectEdit from "@/views/ProjectEdit.vue";
+import ProjectList from "@/views/ProjectList.vue";
+import ProjectShow from "@/views/ProjectShow.vue";
+import Tree from "@/views/Tree.vue";
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import BoardWrite from "@/views/BoardWrite.vue";
-import BoardList from "@/views/BoardList.vue";
-import BoardWrite2 from "@/views/BoardWrite2.vue";
-import BoardList2 from "@/views/BoardList2.vue"
-import Pinia from "@/views/Pinia.vue";
-import Air from "@/views/Air.vue";
-import Tree from "@/views/Tree.vue";
-import ProjectList from "@/views/ProjectList.vue";
-import ProjectEdit from "@/views/ProjectEdit.vue";
-import ProjectCreate from "@/views/ProjectCreate.vue";
-import ProjectShow from "@/views/ProjectShow.vue";
-
 const routes = [
   {
     path: "/",
     name: "home",
     component: HomeView,
   },
+  //
+  
+  {
+    path: "/login",
+    component: Login,
+  },
+  {
+    path: "/register",
+    component: Register,
+  },
+
+  {
+    path: "/profile",
+    name: "profile",
+    // lazy-loaded
+    component: Profile,
+  },
+  {
+    path: "/admin",
+    name: "admin",
+    // lazy-loaded
+    component: BoardAdmin,
+  },
+  {
+    path: "/mod",
+    name: "moderator",
+    // lazy-loaded
+    component: BoardModerator,
+  },
+  {
+    path: "/user",
+    name: "user",
+    // lazy-loaded
+    component: BoardUser,
+  },
+
+
+
+
+
+
+
+
+
   {
     path: "/about",
     name: "about",
