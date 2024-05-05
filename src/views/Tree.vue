@@ -5,7 +5,7 @@ import { onMounted, ref, watchEffect } from 'vue';
 // import TheWelcome from '../components/TheWelcome.vue'
 
 // const API_URL = `http://localhost:8080/v1/dir`
-const API_URL = `/v1/dir`
+const API_URL = `/api/v1/dir`
 const treeData = ref(null)
 
 watchEffect(async () => {
@@ -13,7 +13,14 @@ watchEffect(async () => {
   // re-run whenever currentBranch.value changes
   const url = `${API_URL}`
   treeData.value = await (await fetch(url)).json()
+  console.log('treeData.value', treeData.value)
+  console.log('treeData', treeData)
+
 })
+
+
+
+
 
 onMounted(() => { 
 });
@@ -21,7 +28,7 @@ onMounted(() => {
 
 <template>
   <ul>
-    <TreeItem class="item" :model="treeData"></TreeItem>
+    <TreeItem class="item" :model="treeData.data"></TreeItem>
   </ul>
 </template>
 

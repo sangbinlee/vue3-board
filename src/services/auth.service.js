@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // const API_URL = 'http://localhost:8080/api/v1/auth/';
-const API_URL = '/auth/';
+const API_URL = '/api/v1/auth/';
 
 class AuthService {
   login(user) {
@@ -24,11 +24,18 @@ class AuthService {
   }
 
   register(user) {
+    
+    console.log('user 222',user)
     return axios.post(API_URL + 'signup', {
       username: user.username,
       email: user.email,
-      password: user.password
+      password: user.password,
+      role: user.role,
     });
+  }
+
+  roles() {
+    return axios.get(API_URL + 'roles', {});
   }
 }
 

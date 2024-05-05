@@ -29,7 +29,9 @@ export default {
   name: 'Profile',
   computed: {
     currentUser() {
-      return this.$store.state.auth.user;
+      const user = this.$store.state.auth.user
+      console.log('user',user)
+      return user;
     }
   },
   mounted() {

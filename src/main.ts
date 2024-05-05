@@ -5,6 +5,7 @@ import "@mdi/font/css/materialdesignicons.css";
 
 import { createPinia } from "pinia";
 import { createApp } from "vue";
+import App from "./App.vue";
 
 //////////////////////////////////////  [import bootstrap]  //////////////////////////////////
 // bootstrap
@@ -18,7 +19,7 @@ import router from "./router";
 import store from "./store";
 
 // axios
-import axios from "./plugins/axios";
+// import axios from "./plugins/axios";
 
 // Vuetify
 import { createVuetify } from "vuetify";
@@ -42,9 +43,13 @@ import { FontAwesomeIcon } from '@/plugins/font-awesome';
 
 
 
+import setupInterceptors from './services/setupInterceptors';
+
+setupInterceptors(store);
+
+
 // import FontawesomeIcon from 'FontawesomeIcons';
 //////////////////////////////////////  []  //////////////////////////////////
-import App from "./App.vue";
 //////////////////////////////////////  []  //////////////////////////////////
 //////////////////////////////////////  []  //////////////////////////////////
 //////////////////////////////////////  [const]  //////////////////////////////////
@@ -66,9 +71,9 @@ app.use(router);
 app.use(vuetify);
 
 // axios
-app.use(axios, {
-  // baseUrl: "https://cataas.com/",
-});
+// app.use(axios, {
+//   // baseUrl: "https://cataas.com/",
+// });
 
 // store
 app.use(store)

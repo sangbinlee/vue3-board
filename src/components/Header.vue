@@ -1,5 +1,3 @@
-
-
 <template>
   <!-- <header
     class="v-toolbar v-toolbar--flat v-toolbar--density-default bg-grey-lighten-4 v-theme--light v-locale--is-ltr v-app-bar"
@@ -27,8 +25,8 @@
   </header> -->
 
   <nav class="navbar navbar-expand navbar-dark bg-dark">
-    <router-link to="/" class="navbar-brand">bezKoder</router-link>
-    <div class="navbar-nav mr-auto">
+    <router-link to="/" class="navbar-brand">vue3</router-link>
+    <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <RouterLink class="nav-link" to="/">Home</RouterLink>
       </li>
@@ -66,7 +64,7 @@
         <router-link to="/list" class="nav-link">list</router-link>
       </li>
 
-
+    
       <li v-if="showAdminBoard" class="nav-item">
         <router-link to="/admin" class="nav-link">Admin Board</router-link>
       </li>
@@ -77,7 +75,7 @@
         <router-link v-if="currentUser" to="/user" class="nav-link">User</router-link>
       </li>
 
-    </div>
+    </ul>
 
 
 
